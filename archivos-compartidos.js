@@ -1,3 +1,9 @@
+//Unificar URL
+
+const URL_ = "https://guayerd-proyecto3-d.herokuapp.com/";
+export{URL_ as urlUnificada} ;
+
+
 //  ERNESTO BUIATTI 
 
 /*Historia de usuario: 
@@ -18,6 +24,7 @@ URL: https://demo2420474.mockable.io/userData (POST)
 formato del objeto:
 { token:"", name:"", email:"", sendEmail: boolean }
  */
+
 
 let aceptaIngresarDatos = false; // este parámetro se guarda en localstorage por unica vez la primera vez que entra
 let nombre = "";

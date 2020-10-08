@@ -11,9 +11,11 @@ Formato del objeto a recibir:
  link: ""
 }`
 */
+//const url="https://demo2420474.mockable.io/getHomeBanner";
 
-const url="https://demo2420474.mockable.io/getHomeBanner";
-fetch(url)                          //peticion a la URL
+import {urlUnificada} from "./archivos-compartidos.js";
+
+fetch(`${urlUnificada}getHomeBanner`)                          //peticion a la URL
 .then(function(response){           //se genera la promesa esperando al serv responda
     return response.json();         //se recibe la RTA y se tranforma ne JSON
 })                                  //vamos a generar una 2da promesa para...
