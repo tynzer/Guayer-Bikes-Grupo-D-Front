@@ -11,9 +11,7 @@ Formato del objeto a recibir:
  link: ""
 }`
 */
-//const url="https://demo2420474.mockable.io/getHomeBanner";
 
-//import {urlUnificada} from "./archivos-compartidos.js";
 
 fetch(`${URL_}getHomeBanner`)                          //peticion a la URL
 .then(function(response){           //se genera la promesa esperando al serv responda

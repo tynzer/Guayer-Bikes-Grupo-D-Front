@@ -8,7 +8,7 @@ URL: https://demo2420474.mockable.io/getCoupon (GET)
 Formato:
 {text:"", discountPercentage:00}
  */
-//import {urlUnificada} from "./archivos-compartidos.js";
+
 
 if (localStorage.getItem("nombre") != null) {
     let lsNombre = localStorage.getItem("nombre")
@@ -52,7 +52,6 @@ btnReset.addEventListener ("click", btnResetHandler);
 function formHandler(event){
     event.preventDefault();
     console.log("se cancelo el default");
-    //const URL = 'https://demo2420474.mockable.io/submitForm';
     fetch(`${URL_}submitForm`,{
     method:'POST',
     body:JSON.stringify({name:fnombre.value, email:femail.value, phone:telefono.value,subject:tema.value, message:mensaje.value}),

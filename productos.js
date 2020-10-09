@@ -11,15 +11,11 @@ Agregar en HTML el campo inStock (Unidades)
 Si llega el campo "discountPrice", mostrar el campo "price" tachado y poner el valor con descuento resaltado
 El criterio estético queda a cargo del equipo respetando el estilo actual de la página.
  */
-
  
-//import {urlUnificada} from "./archivos-compartidos.js";
+
 fetch(`${URL_}productList`).then(function (responsive) {
-    //lee la promesa 
     return responsive.json();
-    //lee el json
 }).then(function (productos) {
-    //lo que tengo de comentarios es un arreglo?
     renderProductos(productos)
 });
 
@@ -42,13 +38,4 @@ function renderProductos(productos) {
     container.innerHTML = fragmentos;
 }
 
-
-
-/*     [---POP-UP---]
-if(localStorage.getItem("novedades")==="si"){
-    if(confirm("Le informamos que tenemos ofertas especiales, ¿Desea ver?")){
-         window.location.replace("ofertasPersonalizadas.html");
-    }
-}
-*/
 
