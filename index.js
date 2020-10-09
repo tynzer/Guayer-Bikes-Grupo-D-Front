@@ -13,9 +13,9 @@ Formato del objeto a recibir:
 */
 //const url="https://demo2420474.mockable.io/getHomeBanner";
 
-import {urlUnificada} from "./archivos-compartidos.js";
+//import {urlUnificada} from "./archivos-compartidos.js";
 
-fetch(`${urlUnificada}getHomeBanner`)                          //peticion a la URL
+fetch(`${URL_}getHomeBanner`)                          //peticion a la URL
 .then(function(response){           //se genera la promesa esperando al serv responda
     return response.json();         //se recibe la RTA y se tranforma ne JSON
 })                                  //vamos a generar una 2da promesa para...
@@ -28,7 +28,8 @@ fetch(`${urlUnificada}getHomeBanner`)                          //peticion a la U
 function renderImagenes(imagenes){
     let img     =document.querySelector("#banner");
     img.innerHTML=`<a href = "${imagenes.link}" ><img title = "${imagenes.title}" src = "${imagenes.imgUrl}"></a>`;
-    };
+   console.log (imagenes.title)
+};
 
 
 /* ... */

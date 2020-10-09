@@ -1,7 +1,7 @@
 //Unificar URL
 
-const URL_ = "https://guayerd-proyecto3-d.herokuapp.com/";
-export{URL_ as urlUnificada} ;
+var URL_ = "https://guayerd-proyecto3-d.herokuapp.com/";
+//export{URL_ as urlUnificada} ;
 
 
 //  ERNESTO BUIATTI 
@@ -41,8 +41,8 @@ if (!localStorage.getItem ("aceptaIngresarDatos")){ // si no existe ese key es p
         aceptaIngresarDatos = false;
     }
     localStorage.setItem ("aceptaIngresarDatos", aceptaIngresarDatos);
-    const URL = 'https://demo2420474.mockable.io/userData';
-    fetch(URL,{
+   // const URL = 'https://demo2420474.mockable.io/userData';
+    fetch(`${URL_}userData`,{
     method:'POST',
     body:JSON.stringify({ token:"GRUPOD2020", name:nombre, email:eMail, sendEmail: aceptaIngresarDatos }),
     headers:{'Content-Type':'application/json'}
