@@ -25,7 +25,7 @@ fetch(`${URL_}productList`).then(function (responsive) {
 
 function renderProductos(productos) {
     const container = document.querySelector('#container');
-    let fragmentos = "";
+    let fragmentos = "<h1>Productos</h1>";
     productos.forEach(function (producto) {
         let fragmento = `<div class="bici flexbox">
                         <img class="flexbox-productos" src="${producto.imgUrl}">
